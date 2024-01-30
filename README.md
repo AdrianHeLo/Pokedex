@@ -1,7 +1,13 @@
+<div align="center">
+
 # Pokedex
 A simple Pokémon catalogue, built with Android Studio.
 
-## Snapshots
+<div align="center">
+<img src="https://camo.githubusercontent.com/8dd58b2881014371a18211a7976dc96d76edf56b98aa7b7163a94553ccc09ca4/68747470733a2f2f63646e2e69636f6e2d69636f6e732e636f6d2f69636f6e73322f3835312f504e472f3531322f506f6b656465785f746f6f6c5f69636f6e2d69636f6e732e636f6d5f36373532392e706e67" width="400" alt="">
+</div>
+
+</div>
 
 ## Tech stack & Open-source libraries
 
