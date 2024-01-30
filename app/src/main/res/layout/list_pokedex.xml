@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pokemon_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <TextView
+        android:id="@+id/pokemon_name"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Pokemon Name"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pokemon_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Spd"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/pokemon_name"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_defense"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon_name" />
+
+    <TextView
+        android:id="@+id/pokemon_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:text="PS:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/pokemon_name"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon_name"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/pokemon_attack"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="Att"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_ps" />
+
+    <TextView
+        android:id="@+id/pokemon_defense"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="Def"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_attack" />
+
+    <TextView
+        android:id="@+id/text_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="PS"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/pokemon_ps"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_img"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon_name"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/text_attack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Attack"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/pokemon_attack"
+        app:layout_constraintStart_toEndOf="@+id/text_ps"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon_name"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/text_defense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Defense"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/pokemon_defense"
+        app:layout_constraintStart_toEndOf="@+id/text_attack"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon_name"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Speed"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/pokemon_speed"
+        app:layout_constraintEnd_toEndOf="@+id/pokemon_name"
+        app:layout_constraintStart_toEndOf="@+id/text_defense"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon_name"
+        app:layout_constraintVertical_bias="0.666" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
